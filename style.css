@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000cb;
+    color: white;
+}
+
+header {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: rgb(214, 137, 150);
+}
+
+header p {
+    font-weight: bold;
+    color: rgb(58, 170, 58);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+}
+
+section {
+    margin: 0 auto;
+    display: block;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid rgb(214, 137, 150);
+    margin: 10px;
+    max-height: 100%;
+    vertical-align: top;
+    max-width: 450px;
+}
+
+.card img {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.card details {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+.card details summary {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card details p {
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+
+    header h1 {
+        text-transform: uppercase;
+        color: rgb(214, 137, 150);
+    }
+
+    .card {
+        display: block;
+        margin: 20px 10px;
+    }
+
+    .card img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .card details {
+        width: 100%;
+    }
+
+    .card details summary {
+        font-size: 16px;
+   }
+
+   .card details p {
+    font-size: 14px;
+   }
+
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
